@@ -1,6 +1,6 @@
 // These styles apply to every route in the application
-import '../../../styles/global.css';
-import Home from '../index';
+import '../../../styles/globals.css';
+import Home from '../../../pages/index';
 
 export default function RootLayout({
     children,
@@ -10,7 +10,7 @@ export default function RootLayout({
     return (
         <html lang='ko'>
             <Home />
-            {children}
+            <div>{children}</div>
         </html>
     );
 }
